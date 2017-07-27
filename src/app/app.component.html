@@ -1,0 +1,21 @@
+<!--The whole content below can be removed with the new code.-->
+<!-- <button md-button type="submit" (click)="connect('uma')">uma</button> -->
+<div style="text-align:center">
+  <h1>
+    Welcome to Chatbox!!
+  </h1>  
+  What is your name?<input md-input type="textarea" name="txt" #name><br>
+  WebSocket connection<button md-button type="submit" (click)="connect(name.value)">Connect</button><button md-button type="submit" (click)="disconnect()">DisConnect</button><br>To:<input md-input type="textarea" name="txt" #to><br>
+  Message:<input md-input type="textarea" name="txt" #message>
+  <button md-button type="submit" (click)="send(to.value,message.value)">send</button>
+  <p>{{messageValue}}
+  </p>
+</div>
+
+
+
+<!-- <md-grid-list cols="2" rowHeight="2:1">
+  <md-grid-tile id="user1"><user1></user1></md-grid-tile>
+  <md-grid-tile id="user2"><user2></user2></md-grid-tile>
+</md-grid-list> -->
+
